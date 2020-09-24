@@ -22,9 +22,9 @@ const minutes = Math.floor((diffTime / 1000 / 60) % 60 );
 const seconds = Math.floor((diffTime / 1000 ) % 60 );
 
     days_DOM.innerText = days;
-    hours_DOM.innerText = hours;
-    minutes_DOM.innerText = minutes;
-    seconds_DOM.innerText = seconds;
+    hours_DOM.innerText = hours < 10 ?  '0' + hours : hours;
+    minutes_DOM.innerText = minutes < 10 ?  '0' + minutes : minutes;
+    seconds_DOM.innerText = seconds < 10 ?  '0' + seconds : seconds;
 }
 
 addTimer();
