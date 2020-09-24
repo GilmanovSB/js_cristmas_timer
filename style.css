@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    color: whitesmoke;
+  }
+
+body{
+    background-image: url('res/new_year.jpg');
+    background-size: cover; 
+}
+.main_block {
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 800px);
+}
+
+.next_year {
+    width: 800px;
+    height: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 140px;
+    opacity: .3;
+    margin-top: 10%;
+    font-weight: bold;
+    z-index: -1;
+    position: relative;
+}
+.wraper {
+    width: 800px;
+    height: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    z-index: -1;
+    position: relative;
+    margin-top: -14%;
+}
+
+.timer {
+    margin-top: 5%;
+    display: flex;
+    width: 800px;
+    height: auto;
+    justify-content: space-around;
+}
+
+span, .days, .hours, .minutes, .seconds {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: wheat;
+}
